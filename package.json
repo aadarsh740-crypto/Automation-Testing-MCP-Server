@@ -1,0 +1,26 @@
+{
+  "name": "ai-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "codegen": "playwright codegen",
+    "mcp": "npx @playwright/mcp --config ./playwright-mcp.config.json",
+    "mcp:http": "npx @playwright/mcp --config ./playwright-mcp.config.json --port 8931"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/mcp": "^0.0.85",
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
